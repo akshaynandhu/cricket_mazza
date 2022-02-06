@@ -68,7 +68,7 @@ class _BottomState extends State<Bottom> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.purple,
+        selectedItemColor: Colors.blue[900],
         unselectedItemColor:  Colors.grey,
         showUnselectedLabels: true,
         onTap: _onItemTapped,

@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.blue[900],
           title: Text('Home',style: style1(),),
           actions: [
             IconButton(onPressed: (){}, icon: const Icon(Icons.search))
@@ -35,18 +35,10 @@ class Home extends StatelessWidget {
                   ],
                 ),
 
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Container(
-                          height: 150.h,
-                          width: 350.w,
-                          child: HomeListView()
-                      ),
-
-                    ],
-                  ),
+                SizedBox(
+                    height: 150.h,
+                    width: 350.w,
+                    child: HomeListView()
                 ),
 
                 h1,
@@ -74,20 +66,34 @@ class Home extends StatelessWidget {
                       height: 140.h,
                       decoration: BoxDecoration(
                         color: Colors.blue,
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(10.r),
+                        image: const DecorationImage(
+                          image: NetworkImage('https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg'),
+                          fit: BoxFit.cover,
+                        )
                       ),
-                      child: Stack(
-                        children: [
-                          ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-                              child:  Image(
-                                image: NetworkImage('https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg'),
-                                width: 330.w,
-                                fit: BoxFit.cover,
-                                height: 140.h,
-                              )),
-                        ],
-                      ),
+                      child: Container(
+                        width: 330.w,
+                        height: 40.h,
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.only(bottomRight: Radius.circular(10),bottomLeft: Radius.circular(10)),
+                          gradient: LinearGradient(
+                              colors: [
+                                Colors.black,
+                                Colors.transparent,
+                                Colors.transparent,
+                                Colors.transparent,
+                              ],
+                              begin: Alignment.bottomCenter,
+                              end: Alignment.topCenter,
+                              stops: [0.05,0.43,0.0,3],
+                            )
+                        ),
+                        child:  Padding(
+                          padding:  EdgeInsets.only(top: 120.h,left: 10.w),
+                          child: Text('CSK beat KKR in the IPL 2021',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                        ),
+                      )
                     ),
                   ],
                 ),

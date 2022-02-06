@@ -33,14 +33,14 @@ List<dynamic> featuredText = [
 ];
 
 List<String> featuredImages = [
-  "https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg",
-  "https://media.istockphoto.com/photos/modern-gradient-abstract-background-picture-id980940618?b=1&k=20&m=980940618&s=170667a&w=0&h=wayK91aJW5oaIvixVONisJifsK3rdU1P7QTdm9-WlSM=",
-  "https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg",
-  "https://media.istockphoto.com/photos/modern-gradient-abstract-background-picture-id980940618?b=1&k=20&m=980940618&s=170667a&w=0&h=wayK91aJW5oaIvixVONisJifsK3rdU1P7QTdm9-WlSM=",
-  "https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg",
-  "https://media.istockphoto.com/photos/modern-gradient-abstract-background-picture-id980940618?b=1&k=20&m=980940618&s=170667a&w=0&h=wayK91aJW5oaIvixVONisJifsK3rdU1P7QTdm9-WlSM=",
-  "https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg",
-  "https://media.istockphoto.com/photos/modern-gradient-abstract-background-picture-id980940618?b=1&k=20&m=980940618&s=170667a&w=0&h=wayK91aJW5oaIvixVONisJifsK3rdU1P7QTdm9-WlSM=",
+  "https://www.wacricket.com.au/-/media/cricketwacacomau/News/220104_cooper_connolly.ashx",
+  "https://img.cricketnmore.com/uploads/2021/10/gautam-gambhir-indias-greatest-unpraised-cricketer.jpg",
+  "https://www.wacricket.com.au/-/media/cricketwacacomau/News/220104_cooper_connolly.ashx",
+  "https://img.cricketnmore.com/uploads/2021/10/gautam-gambhir-indias-greatest-unpraised-cricketer.jpg",
+  "https://www.wacricket.com.au/-/media/cricketwacacomau/News/220104_cooper_connolly.ashx",
+  "https://img.cricketnmore.com/uploads/2021/10/gautam-gambhir-indias-greatest-unpraised-cricketer.jpg",
+  "https://www.wacricket.com.au/-/media/cricketwacacomau/News/220104_cooper_connolly.ashx",
+  "https://img.cricketnmore.com/uploads/2021/10/gautam-gambhir-indias-greatest-unpraised-cricketer.jpg",
 ];
 
 TextStyle style1(){
@@ -112,7 +112,7 @@ class HomeListView extends StatelessWidget {
         itemBuilder: (BuildContext context, int index){
           return Container(
             height: 180.h,
-            width: 330.w,
+            width: 350.w,
             decoration:  BoxDecoration(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -123,7 +123,7 @@ class HomeListView extends StatelessWidget {
                     children: [
                        Padding(
                         padding:  EdgeInsets.all(8.0),
-                        child: Text('3rd Match, ODI - Zimbave tour of Ireland, 2021',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.bold,fontSize: 15),),
+                        child: Text('3rd Match, ODI - Zimbave tour of Ireland, 2021',style: TextStyle(color: Colors.grey[600],fontWeight: FontWeight.bold,fontSize: 15.sp),),
                       )
                     ],
                   ),
@@ -136,9 +136,9 @@ class HomeListView extends StatelessWidget {
                         Column(
                           children: [
                             h1,
-                            Image.network('https://enkoeducation.com/wp-content/uploads/2018/06/zimbabwe.png',width: 50,height: 50,),
+                            Image.network('https://enkoeducation.com/wp-content/uploads/2018/06/zimbabwe.png',width: 50.w,height: 50.h,),
                             SizedBox(height: 5.h,),
-                            const Text('Zimbabwe',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold)),
+                            Text('Zimbabwe',style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.bold)),
                           ],
                         ),
                         Column(
@@ -149,7 +149,7 @@ class HomeListView extends StatelessWidget {
                           ],
                         ),
                         SizedBox(width: 10.w,),
-                        Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4__GNsQ7uR6xc6treKKufNp4AQEPJysqnNnOfiqVY7QmBZ1Vw1ecOJwpbhdCbpcBIHss&usqp=CAU',width: 35,height: 35,),
+                        Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4__GNsQ7uR6xc6treKKufNp4AQEPJysqnNnOfiqVY7QmBZ1Vw1ecOJwpbhdCbpcBIHss&usqp=CAU',width: 35.w,height: 35.h,),
                         w1,
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -160,9 +160,9 @@ class HomeListView extends StatelessWidget {
                         Column(
                           children: [
                             h1,
-                            Image.network('https://a.espncdn.com/i/teamlogos/cricket/500/29.png',width: 50,height: 50,),
+                            Image.network('https://a.espncdn.com/i/teamlogos/cricket/500/29.png',width: 50.w,height: 50.h,),
                             SizedBox(height: 5.h,),
-                            const Text('Ireland', style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
+                             Text('Ireland', style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.bold),),
 
                           ],
                         )
@@ -170,7 +170,7 @@ class HomeListView extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(height: 10.h,),
+                  SizedBox(height: 5.h,),
 
                    Text('IRE Won by 3 Wickets(DLS)',style: TextStyle(color: Colors.red,fontSize: 15.sp),)
 
@@ -200,9 +200,6 @@ class MatchesListView extends StatelessWidget {
           return Container(
             height: 120.h,
             width: 200.w,
-            decoration: const BoxDecoration(
-              // image: DecorationImage(image: AssetImage('assets/images/matchbg.jpg'))
-            ),
             child: Card(
               child: Column(
                 children: [
@@ -223,8 +220,8 @@ class MatchesListView extends StatelessWidget {
                   Container(
                     width: 180.w,
                     height: 15.h,
-                    decoration: const BoxDecoration(
-                      color: Colors.purple,
+                    decoration:  BoxDecoration(
+                      color: Colors.blue[900],
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight: Radius.circular(10),)
                     ),
                     child: Center(child: matchText),
@@ -332,8 +329,8 @@ Widget LiveTabbar(){
           mainAxisAlignment: MainAxisAlignment.end,
           children:  [
             TabBar(
-              indicatorColor: Colors.purple,
-              labelColor: Colors.purple,
+              indicatorColor: Colors.blue[900],
+              labelColor: Colors.blue[900],
               unselectedLabelColor: Colors.grey,
               isScrollable: true,
               tabs: [
@@ -392,9 +389,9 @@ Widget MatchesTabbar(){
           children:  [
             TabBar(
               labelPadding: EdgeInsets.symmetric(horizontal: 26),
-              indicatorColor: Colors.purple,
+              indicatorColor: Colors.blue[900],
               indicatorSize: TabBarIndicatorSize.tab ,
-              labelColor: Colors.purple,
+              labelColor: Colors.blue[900],
               unselectedLabelColor: Colors.grey,
               isScrollable: true,
               tabs: [
@@ -460,22 +457,57 @@ Widget ProfileCover(){
       ),
 
        Positioned(
-          top: 100,
-          left: 20,
+          top: 70.h,
+          left: 5.w,
           child:  SizedBox(
-            height: 195.h,
-            width: 150.w,
+            height: 210.h,
+            width: 205.w,
             child: Image(
               image:
-              AssetImage('assets/images/dhoni.png'),
+              NetworkImage('https://i.postimg.cc/FsWjfkfH/IMG-20220207-041116-removebg-preview.png'),
               fit: BoxFit.cover,
             ),
           )
       ),
+
+      Positioned(
+        top: 180.h,
+          right: 2.w,
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10)
+            ),
+            width: 150,
+          margin: const EdgeInsets.all(10),
+          child:  LinearProgressIndicator(
+            value: 0.8,
+            backgroundColor: Colors.grey[400],
+            color: Colors.white,
+            minHeight: 8.h,
+          )
+      )),
+
+
+      Positioned(
+          top: 220.h,
+          right: 2.w,
+          child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10)
+              ),
+              width: 150,
+              margin: const EdgeInsets.all(10),
+              child:  LinearProgressIndicator(
+                value: 0.9,
+                backgroundColor: Colors.grey[400],
+                color: Colors.white,
+                minHeight: 8.h,
+              )
+          )),
       
       Positioned(
-          top: 100,
-          right: 20,
+          top: 100.h,
+          right: 20.w,
           child: RichText(
         text:  TextSpan(
           children:  <TextSpan>[
@@ -486,9 +518,33 @@ Widget ProfileCover(){
       )
       ),
 
-      const Positioned(
-          top: 130,
-          right: 98,
+      Positioned(
+          top: 170.h,
+          right: 15.w,
+          child: Row(
+            children: [
+              Text('Bating',style: TextStyle(color: Colors.white),),
+              SizedBox(width: 75.w,),
+              Text('80%',style: TextStyle(color: Colors.white),)
+            ],
+          )
+      ),
+
+      Positioned(
+          top: 210.h,
+          right: 15.w,
+          child: Row(
+            children: [
+              Text('WC',style: TextStyle(color: Colors.white),),
+              SizedBox(width: 90.w,),
+              Text('90%',style: TextStyle(color: Colors.white),)
+            ],
+          )
+      ),
+
+       Positioned(
+          top: 120.h,
+          right: 90.w,
           child: Text('TEAM INDIA',style: TextStyle(color: Colors.white ,fontWeight: FontWeight.w300),)
       ),
 
@@ -510,8 +566,8 @@ Widget Fantacy(){
         Container(
           height: 40.h,
           width: 330.w,
-          decoration: const BoxDecoration(
-            color: Colors.purple,
+          decoration:  BoxDecoration(
+            color: Colors.blue[900],
             borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight: Radius.circular(10))
           ),
           child: Padding(
@@ -835,18 +891,11 @@ Widget matchBox4(){
   );
 }
 
-class Live extends StatelessWidget {
-  const Live({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
 
 Widget Live2(){
   return Container(
-      width: 338.w,
+      width: 350.w,
       height: 150.h,
       decoration: BoxDecoration(
           color: Colors.white,
@@ -858,8 +907,8 @@ Widget Live2(){
             Container(
               height: 40.h,
               width: 330.w,
-              decoration: const BoxDecoration(
-                  color: Colors.purple,
+              decoration:  BoxDecoration(
+                  color: Colors.blue[900],
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight: Radius.circular(10))
               ),
               child: Padding(
@@ -887,7 +936,7 @@ Widget Live2(){
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: [
-                  const Icon(Icons.sports_cricket,color: Colors.blue,),
+                   Icon(Icons.sports_cricket,color: Colors.blue[900],),
                   const Text(' Paul Stirling'),
                   SizedBox(width: 50.w,),
                   Text('30'),
@@ -934,7 +983,7 @@ Widget Live2(){
 
 Widget Live3(){
   return Container(
-      width: 332.w,
+      width: 350.w,
       height: 91.h,
       decoration: BoxDecoration(
           color: Colors.white,
@@ -946,8 +995,8 @@ Widget Live3(){
             Container(
               height: 40.h,
               width: 330.w,
-              decoration: const BoxDecoration(
-                  color: Colors.purple,
+              decoration:  BoxDecoration(
+                  color: Colors.blue[900],
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(10),topRight: Radius.circular(10))
               ),
               child: Padding(
@@ -975,7 +1024,7 @@ Widget Live3(){
               padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: [
-                  const Icon(Icons.sports_baseball,color: Colors.blue,),
+                   Icon(Icons.sports_baseball,color: Colors.blue[900],),
                   const Text(' Tendai Chatara'),
                   SizedBox(width: 30.w,),
                   Text('5'),
@@ -1002,7 +1051,7 @@ Widget Live3(){
 Widget Live1(){
   return Container(
     height: 180.h,
-    width: 330.w,
+    width: 350.w,
     decoration:  BoxDecoration(
       borderRadius: BorderRadius.circular(20)
     ),
@@ -1103,8 +1152,8 @@ Widget Live1(){
                     Container(
                       height: 15,
                       width: 15,
-                      decoration: const BoxDecoration(
-                        color: Colors.purple,
+                      decoration:  BoxDecoration(
+                        color: Colors.blue[900],
                         shape: BoxShape.circle,
 
                       ),
@@ -1116,8 +1165,8 @@ Widget Live1(){
                     Container(
                       height: 15,
                       width: 15,
-                      decoration: const BoxDecoration(
-                        color: Colors.purple,
+                      decoration:  BoxDecoration(
+                        color: Colors.blue[900],
                         shape: BoxShape.circle,
 
                       ),
@@ -1129,8 +1178,8 @@ Widget Live1(){
                     Container(
                       height: 15,
                       width: 15,
-                      decoration: const BoxDecoration(
-                        color: Colors.purple,
+                      decoration:  BoxDecoration(
+                        color: Colors.blue[900],
                         shape: BoxShape.circle,
 
                       ),
@@ -1142,8 +1191,8 @@ Widget Live1(){
                     Container(
                       height: 15,
                       width: 15,
-                      decoration: const BoxDecoration(
-                        color: Colors.purple,
+                      decoration:  BoxDecoration(
+                        color: Colors.blue[900],
                         shape: BoxShape.circle,
 
                       ),

@@ -9,7 +9,7 @@ class Matches extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.blue[900],
         title: Text('Matches',style: style1(),),
         actions: [
           IconButton(onPressed: (){}, icon: const Icon(Icons.search))

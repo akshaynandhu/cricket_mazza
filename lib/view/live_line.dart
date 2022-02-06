@@ -9,7 +9,7 @@ class Live extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.blue[900],
         title: Text('Live Line',style: style1(),),
         actions: [
           IconButton(onPressed: (){}, icon: const Icon(Icons.search))
