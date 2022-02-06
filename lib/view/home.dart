@@ -41,8 +41,10 @@ class Home extends StatelessWidget {
                     children: [
                       Container(
                           height: 150.h,
-                          width: 400.w,
-                          child: HomeListView()),
+                          width: 350.w,
+                          child: HomeListView()
+                      ),
+
                     ],
                   ),
                 ),
@@ -63,20 +65,34 @@ class Home extends StatelessWidget {
                   ),
                 ),
 
+                SizedBox(height: 10.h,),
+
                 Row(
                   children: [
-                    Flexible(
-                      child: Container(
-                        width: 333.w,
-                        height: 200.h,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(image: NetworkImage('https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg'),)
-                        ),
+                    Container(
+                      width: 330.w,
+                      height: 140.h,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child:  Image(
+                                image: NetworkImage('https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg'),
+                                width: 330.w,
+                                fit: BoxFit.cover,
+                                height: 140.h,
+                              )),
+                        ],
                       ),
                     ),
                   ],
                 ),
+
+                h1,
 
                 Padding(
                   padding: const EdgeInsets.only(right: 15.0),
@@ -84,13 +100,15 @@ class Home extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
 
-                      Text('Top Stories',style: style2(),),
+                      Text('Featured Videos',style: style2(),),
 
                       Text('View More',style: style3(),),
 
                     ],
                   ),
                 ),
+
+                SizedBox(height: 10.h,),
 
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,

@@ -1,5 +1,8 @@
 import 'package:cricketmazza/view/home.dart';
 import 'package:cricketmazza/view/live_line.dart';
+import 'package:cricketmazza/view/matches.dart';
+import 'package:cricketmazza/view/player_profile.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Bottom extends StatefulWidget {
@@ -17,10 +20,7 @@ class _BottomState extends State<Bottom> {
 
     Home(),
 
-    Text(
-      'Matches',
-      style: optionStyle,
-    ),
+    Matches(),
 
     Live(),
 
@@ -28,10 +28,8 @@ class _BottomState extends State<Bottom> {
       'Settings',
       style: optionStyle,
     ),
-    Text(
-      'Accounts',
-      style: optionStyle,
-    ),
+
+    Profile(),
   ];
 
   void _onItemTapped(int index) {
@@ -47,7 +45,7 @@ class _BottomState extends State<Bottom> {
         child: _screens.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items:  const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
@@ -57,7 +55,7 @@ class _BottomState extends State<Bottom> {
             label: 'Matches',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.wifi_tethering),
+            icon: Icon(CupertinoIcons.dot_radiowaves_left_right),
             label: 'Live',
           ),
           BottomNavigationBarItem(

@@ -1,6 +1,5 @@
 import 'package:cricketmazza/constants/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Live extends StatelessWidget {
   const Live({Key? key}) : super(key: key);
@@ -18,7 +17,8 @@ class Live extends StatelessWidget {
         leading: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
       ),
 
-      body: Column(
+      body: Container(
+        child: LiveTabbar(),
       ),
     );
   }
