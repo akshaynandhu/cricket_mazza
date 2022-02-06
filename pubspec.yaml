@@ -37,6 +37,7 @@ dependencies:
   flutter_screenutil: ^5.1.1
   animated_splash_screen: ^1.1.0
   font_awesome_flutter: ^9.2.0
+  flutter_lorem: ^2.0.0
 
 
 dev_dependencies:
@@ -63,7 +64,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
 assets:
-     - assets/images/
+  - assets/images/dhoni.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

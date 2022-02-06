@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,6 +21,16 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 //   }
 // }
 
+List<dynamic> featuredText = [
+  Text('Australia sit pretty with 175',style: style8(),),
+  Text('Gautam Gambhir Rcords, world cups',style: style8(),),
+  Text('Australia sit pretty with 175',style: style8(),),
+  Text('Gautam Gambhir Rcords, world cups',style: style8(),),
+  Text('Australia sit pretty with 175',style: style8(),),
+  Text('Gautam Gambhir Rcords, world cups',style: style8(),),
+  Text('Australia sit pretty with 175',style: style8(),),
+  Text('Gautam Gambhir Rcords, world cups',style: style8(),),
+];
 
 List<String> featuredImages = [
   "https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg",
@@ -30,7 +41,6 @@ List<String> featuredImages = [
   "https://media.istockphoto.com/photos/modern-gradient-abstract-background-picture-id980940618?b=1&k=20&m=980940618&s=170667a&w=0&h=wayK91aJW5oaIvixVONisJifsK3rdU1P7QTdm9-WlSM=",
   "https://english.cdn.zeenews.com/sites/default/files/2021/10/16/979884-galleryprizecsklead.jpg",
   "https://media.istockphoto.com/photos/modern-gradient-abstract-background-picture-id980940618?b=1&k=20&m=980940618&s=170667a&w=0&h=wayK91aJW5oaIvixVONisJifsK3rdU1P7QTdm9-WlSM=",
-
 ];
 
 TextStyle style1(){
@@ -88,7 +98,7 @@ TextStyle style7(){
 TextStyle style8(){
   return  TextStyle(
     fontWeight: FontWeight.bold,
-    fontSize: 18.sp,
+    fontSize: 13.sp,
   );
 }
 
@@ -281,6 +291,21 @@ class HomeListView2 extends StatelessWidget {
                     ),
                   ),
 
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      child: featuredText[index],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit iaculis pharetra ut vel orci.'),
+                    ),
+                  ),
+
+
                 ],
               ),
             ),
@@ -344,11 +369,10 @@ Widget LiveTabbar(){
       body:  const TabBarView(
         children: [
           AllLive(),
-          Tab(icon: Icon(Icons.directions_transit)),
-          Tab(icon: Icon(Icons.directions_bike)),
-          Tab(icon: Icon(Icons.directions_transit)),
-          Tab(icon: Icon(Icons.directions_bike)),
-        ],
+          Center(child: Text('ScoreCard')),
+          Center(child: Text('Points')),
+          Center(child: Text('Info')),
+          Center(child: Text('Balance')),        ],
       ),
     ),
   );
@@ -385,16 +409,16 @@ Widget MatchesTabbar(){
         ),
       ),
 
-      body:  const TabBarView(
+      body:   const TabBarView(
         children: [
           Padding(
             padding: EdgeInsets.all(15.0),
             child: MatchesListView(),
           ),
-          Tab(icon: Icon(Icons.directions_transit)),
-          Tab(icon: Icon(Icons.directions_bike)),
-          Tab(icon: Icon(Icons.directions_transit)),
-          Tab(icon: Icon(Icons.directions_bike)),
+          Center(child: Text('ODI',)),
+          Center(child: Text('T20',)),
+          Center(child: Text('Test',)),
+          Center(child: Text('T10',)),
         ],
       ),
     ),
@@ -436,14 +460,14 @@ Widget ProfileCover(){
       ),
 
        Positioned(
-          top: 200,
+          top: 100,
           left: 20,
           child:  SizedBox(
-            height: 80.h,
-            width: 80.w,
+            height: 195.h,
+            width: 150.w,
             child: Image(
               image:
-              NetworkImage('http://18.216.136.74/images/product/productvarients/61bcb0bad9b0f67385f7da35_1.jpg'),
+              AssetImage('assets/images/dhoni.png'),
               fit: BoxFit.cover,
             ),
           )
@@ -455,7 +479,7 @@ Widget ProfileCover(){
           child: RichText(
         text:  TextSpan(
           children:  <TextSpan>[
-            TextSpan(text: 'MS Dhoni ', style: style8()),
+            TextSpan(text: 'MS Dhoni ', style: style5()),
             const TextSpan(text: '(Batsman)',style: TextStyle(fontWeight: FontWeight.w300)),
           ],
         ),
