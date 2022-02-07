@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:cricketmazza/view/bottom_navigation.dart';
+import 'package:cricketmazza/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -22,13 +23,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: AnimatedSplashScreen(
-          animationDuration: Duration(seconds: 2),
-          backgroundColor: Colors.black,
-          splash: Text('Hello',style: TextStyle(color: Colors.white),),
-          splashTransition: SplashTransition.fadeTransition,
-          nextScreen: const  Bottom(),
-        ),
+        home: Splash(),
         debugShowCheckedModeBanner: false,
       ),
       designSize: const Size(360, 640),

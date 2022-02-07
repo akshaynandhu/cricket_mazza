@@ -1026,7 +1026,7 @@ Widget Live3(){
                 children: [
                    Icon(Icons.sports_baseball,color: Colors.blue[900],),
                   const Text(' Tendai Chatara'),
-                  SizedBox(width: 30.w,),
+                  SizedBox(width: 37.w,),
                   Text('5'),
                   SizedBox(width: 25.w,),
                   Text('0'),
